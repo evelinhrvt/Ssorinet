@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf99ef33-5be3-4eb6-b124-95c1d5c252e3" name="Changes" comment="Frissites">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Szabalzok.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/style2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mappa/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/mappa/index2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +59,7 @@
       <updated>1670795565467</updated>
       <workItem from="1670795580991" duration="696000" />
       <workItem from="1670835681785" duration="134000" />
-      <workItem from="1670840008235" duration="3730000" />
+      <workItem from="1670840008235" duration="3813000" />
     </task>
     <task id="LOCAL-00001" summary="222.">
       <created>1670795721130</created>
@@ -133,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670843739441</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Frissites">
+      <created>1670843980105</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670843980105</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
