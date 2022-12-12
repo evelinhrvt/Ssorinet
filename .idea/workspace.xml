@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf99ef33-5be3-4eb6-b124-95c1d5c252e3" name="Changes" comment="javitassa" />
+    <list default="true" id="bf99ef33-5be3-4eb6-b124-95c1d5c252e3" name="Changes" comment="Leirasok">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/About.html" beforeDir="false" afterPath="$PROJECT_DIR$/About.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Premium.html" beforeDir="false" afterPath="$PROJECT_DIR$/Premium.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rules.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rules.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shreach.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shreach.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mappa/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/mappa/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mappa/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/style2.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +38,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Horvat Evelin 4i\Github\Sorinet\Ssorinet" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -39,7 +53,7 @@
       <updated>1670795565467</updated>
       <workItem from="1670795580991" duration="696000" />
       <workItem from="1670835681785" duration="134000" />
-      <workItem from="1670840008235" duration="341000" />
+      <workItem from="1670840008235" duration="3236000" />
     </task>
     <task id="LOCAL-00001" summary="222.">
       <created>1670795721130</created>
@@ -83,7 +97,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670840129376</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="kereso hatterszin csere">
+      <created>1670840470693</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670840470693</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Leirasok">
+      <created>1670841702984</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670841702984</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +132,8 @@
     <MESSAGE value="222." />
     <MESSAGE value="javitas" />
     <MESSAGE value="javitassa" />
-    <option name="LAST_COMMIT_MESSAGE" value="javitassa" />
+    <MESSAGE value="kereso hatterszin csere" />
+    <MESSAGE value="Leirasok" />
+    <option name="LAST_COMMIT_MESSAGE" value="Leirasok" />
   </component>
 </project>
