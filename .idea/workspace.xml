@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf99ef33-5be3-4eb6-b124-95c1d5c252e3" name="Changes" comment="javitas" />
+    <list default="true" id="bf99ef33-5be3-4eb6-b124-95c1d5c252e3" name="Changes" comment="javitassa" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,6 +39,7 @@
       <updated>1670795565467</updated>
       <workItem from="1670795580991" duration="696000" />
       <workItem from="1670835681785" duration="134000" />
+      <workItem from="1670840008235" duration="341000" />
     </task>
     <task id="LOCAL-00001" summary="222.">
       <created>1670795721130</created>
@@ -75,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670835810215</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="javitassa">
+      <created>1670840129376</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670840129376</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +103,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="222." />
     <MESSAGE value="javitas" />
-    <option name="LAST_COMMIT_MESSAGE" value="javitas" />
+    <MESSAGE value="javitassa" />
+    <option name="LAST_COMMIT_MESSAGE" value="javitassa" />
   </component>
 </project>
