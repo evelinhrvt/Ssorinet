@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf99ef33-5be3-4eb6-b124-95c1d5c252e3" name="Changes" comment="Leirasok">
+    <list default="true" id="bf99ef33-5be3-4eb6-b124-95c1d5c252e3" name="Changes" comment="Frissites">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About.html" beforeDir="false" afterPath="$PROJECT_DIR$/About.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Premium.html" beforeDir="false" afterPath="$PROJECT_DIR$/Premium.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rules.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rules.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shreach.html" beforeDir="false" afterPath="$PROJECT_DIR$/Shreach.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mappa/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/mappa/index2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mappa/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/style2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Szabalzok.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/style2.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +15,19 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/Evelin" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -53,7 +61,7 @@
       <updated>1670795565467</updated>
       <workItem from="1670795580991" duration="696000" />
       <workItem from="1670835681785" duration="134000" />
-      <workItem from="1670840008235" duration="3236000" />
+      <workItem from="1670840008235" duration="3730000" />
     </task>
     <task id="LOCAL-00001" summary="222.">
       <created>1670795721130</created>
@@ -111,7 +119,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670841702984</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Frissites">
+      <created>1670843600252</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670843600252</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Frissites">
+      <created>1670843739441</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670843739441</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +156,7 @@
     <MESSAGE value="javitassa" />
     <MESSAGE value="kereso hatterszin csere" />
     <MESSAGE value="Leirasok" />
-    <option name="LAST_COMMIT_MESSAGE" value="Leirasok" />
+    <MESSAGE value="Frissites" />
+    <option name="LAST_COMMIT_MESSAGE" value="Frissites" />
   </component>
 </project>
