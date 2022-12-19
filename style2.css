@@ -45,15 +45,15 @@ nav .animation{
   /* height: 5px; */
   top: 0;
   /* bottom: 0; */
-  z-index: -1;
-  background: #8e44ad;
+  /*z-index: -1;*/
+  background: #1abc9c;
   border-radius: 8px;
   /*transition: all .5s ease 0s;*/
 }
 nav a:nth-child(1){
   width: 100px;
 }
-nav .start-home, a:nth-child(1):hover~.animation{
+nav .start-.active, a:nth-child(1):hover~.animation{
   width: 100px;
   left: 0;
 }
