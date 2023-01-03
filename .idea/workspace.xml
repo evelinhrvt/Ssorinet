@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf99ef33-5be3-4eb6-b124-95c1d5c252e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/Lucifer/Lucifer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/Lucifer/LuciferLink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/Narcos/Narcos.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/Narcos/NarcosLink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/Sex education/SELink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/Sex education/sexeducation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/You/You.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/You/YouLink.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About.html" beforeDir="false" afterPath="$PROJECT_DIR$/About.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Premium.html" beforeDir="false" afterPath="$PROJECT_DIR$/Premium.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rules.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rules.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorozatok/GameOfThrones/GOTLink.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sorozatok/GameOfThrones/GOTLink.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -80,7 +82,7 @@
       <workItem from="1670835681785" duration="134000" />
       <workItem from="1670840008235" duration="4712000" />
       <workItem from="1671434318446" duration="147000" />
-      <workItem from="1672750650224" duration="4848000" />
+      <workItem from="1672750650224" duration="6607000" />
     </task>
     <task id="LOCAL-00001" summary="222.">
       <created>1670795721130</created>
@@ -201,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672754299078</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Felh nev:user&#10;jelszo: passw">
+      <created>1672755770822</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1672755770822</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
