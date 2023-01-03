@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf99ef33-5be3-4eb6-b124-95c1d5c252e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorozatok/Game of Thrones.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sorozatok/GameOfThrones/Game of Thrones.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/GameOfThrones/GOTLink.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorozatok/GameOfThrones/Game of Thrones.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sorozatok/GameOfThrones/Game of Thrones.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorozatok/stylee.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sorozatok/stylee.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -58,6 +61,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Info\Ssorinet\Sorozatok\GameOfThrones" />
       <recent name="D:\Horvat Evelin 4i\Github\Sorinet\Ssorinet" />
     </key>
   </component>
@@ -73,7 +77,7 @@
       <workItem from="1670835681785" duration="134000" />
       <workItem from="1670840008235" duration="4712000" />
       <workItem from="1671434318446" duration="147000" />
-      <workItem from="1672750650224" duration="1677000" />
+      <workItem from="1672750650224" duration="3543000" />
     </task>
     <task id="LOCAL-00001" summary="222.">
       <created>1670795721130</created>
@@ -180,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672751972368</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Frissites">
+      <created>1672752357265</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1672752357265</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
