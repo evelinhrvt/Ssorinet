@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf99ef33-5be3-4eb6-b124-95c1d5c252e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Sorozatok/GameOfThrones/GOTLink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style3.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorozatok/GameOfThrones/Game of Thrones.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sorozatok/GameOfThrones/Game of Thrones.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorozatok/stylee.css" beforeDir="false" afterPath="$PROJECT_DIR$/Sorozatok/stylee.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/About.html" beforeDir="false" afterPath="$PROJECT_DIR$/About.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Premium.html" beforeDir="false" afterPath="$PROJECT_DIR$/Premium.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rules.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rules.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sorozatok/GameOfThrones/GOTLink.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sorozatok/GameOfThrones/GOTLink.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -77,7 +80,7 @@
       <workItem from="1670835681785" duration="134000" />
       <workItem from="1670840008235" duration="4712000" />
       <workItem from="1671434318446" duration="147000" />
-      <workItem from="1672750650224" duration="3543000" />
+      <workItem from="1672750650224" duration="4848000" />
     </task>
     <task id="LOCAL-00001" summary="222.">
       <created>1670795721130</created>
@@ -191,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672752357265</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Felh nev:user&#10;jelszo: passw">
+      <created>1672754299078</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1672754299078</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,6 +225,7 @@
     <MESSAGE value="kereso hatterszin csere" />
     <MESSAGE value="Leirasok" />
     <MESSAGE value="Frissites" />
-    <option name="LAST_COMMIT_MESSAGE" value="Frissites" />
+    <MESSAGE value="Felh nev:user&#10;jelszo: passw" />
+    <option name="LAST_COMMIT_MESSAGE" value="Felh nev:user&#10;jelszo: passw" />
   </component>
 </project>
