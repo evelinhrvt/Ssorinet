@@ -2,14 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf99ef33-5be3-4eb6-b124-95c1d5c252e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Sorozatok/Lucifer/Lucifer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sorozatok/Lucifer/LuciferLink.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sorozatok/Narcos/Narcos.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sorozatok/Narcos/NarcosLink.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sorozatok/Sex education/SELink.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sorozatok/Sex education/sexeducation.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sorozatok/You/You.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sorozatok/You/YouLink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/104Room/104RLink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/104Room/104Room.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/CSIMiami/CSIMLink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/CSIMiami/CSIMiami.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/ClickBait/CBLink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/ClickBait/ClickBait.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/Cobra11/C11Link.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/Cobra11/Cobra11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/CobraKai/CKLink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/CobraKai/CobraKai.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/CriminalMinds/CMLink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/CriminalMinds/CriminalMinds.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/EmilyInParis/EIPLink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/EmilyInParis/EmilyInParis.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/FamiliyGuy/FGLink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/FamiliyGuy/FamiliyGuy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/GreysAnathomy/GALink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/GreysAnathomy/GreysAnathomy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/HoneyHeist/HHLink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/HoneyHeist/HoneyHeist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/Ozark/Ozark.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/Ozark/OzarkLink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/Sisi/Sisi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/Sisi/SisiLink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/StrangerThings/STLink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/StrangerThings/Stranger Things.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/SuperNatural/SNLink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/SuperNatural/SuperNatural.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/TheBigBangTheory/TBBTLink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/TheBigBangTheory/TheBigBangTheory.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/TheEndOfTheFuckingWorld/TEOTFWLink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/TheEndOfTheFuckingWorld/TheEndOfTheFuckingWorld.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/TheMentalist/TMLink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/TheMentalist/TheMentalist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/TheVampireDiaries/TVDLink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/TheVampireDiaries/TheVampireDiaries.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/TwoAndAHalfMen/TAAHMLink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/TwoAndAHalfMen/TwoAndAHalfMen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/Unfriended/Unfriended.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/Unfriended/UnfriendedLink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/Wednesday/Wednesday.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/Wednesday/WednesdayLink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/WlakingDead/WDLink.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sorozatok/WlakingDead/WlakingDead.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home.html" afterDir="false" />
     </list>
@@ -49,6 +85,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2ImnKpUinb8ckcoWxgNvEISiOpF" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -82,7 +121,7 @@
       <workItem from="1670835681785" duration="134000" />
       <workItem from="1670840008235" duration="4712000" />
       <workItem from="1671434318446" duration="147000" />
-      <workItem from="1672750650224" duration="6607000" />
+      <workItem from="1672750650224" duration="9296000" />
     </task>
     <task id="LOCAL-00001" summary="222.">
       <created>1670795721130</created>
@@ -210,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672755770822</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Sorozatok">
+      <created>1672758668193</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1672758668193</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +281,7 @@
     <MESSAGE value="Leirasok" />
     <MESSAGE value="Frissites" />
     <MESSAGE value="Felh nev:user&#10;jelszo: passw" />
-    <option name="LAST_COMMIT_MESSAGE" value="Felh nev:user&#10;jelszo: passw" />
+    <MESSAGE value="Sorozatok" />
+    <option name="LAST_COMMIT_MESSAGE" value="Sorozatok" />
   </component>
 </project>
