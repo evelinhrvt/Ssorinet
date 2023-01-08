@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf99ef33-5be3-4eb6-b124-95c1d5c252e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorozatok/104Room/104RLink.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sorozatok/104Room/104RLink.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorozatok/104Room/104Room.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sorozatok/104Room/104Room.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorozatok/ClickBait/CBLink.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sorozatok/ClickBait/CBLink.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorozatok/ClickBait/ClickBait.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sorozatok/ClickBait/ClickBait.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorozatok/Cobra11/C11Link.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sorozatok/Cobra11/C11Link.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sorozatok/Cobra11/Cobra11.html" beforeDir="false" afterPath="$PROJECT_DIR$/Sorozatok/Cobra11/Cobra11.html" afterDir="false" />
-    </list>
+    <list default="true" id="bf99ef33-5be3-4eb6-b124-95c1d5c252e3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +74,7 @@
       <workItem from="1670835681785" duration="134000" />
       <workItem from="1670840008235" duration="4712000" />
       <workItem from="1671434318446" duration="147000" />
-      <workItem from="1672750650224" duration="10550000" />
+      <workItem from="1672750650224" duration="10565000" />
     </task>
     <task id="LOCAL-00001" summary="222.">
       <created>1670795721130</created>
@@ -238,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672793027892</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Sorozatok">
+      <created>1672793524732</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1672793524732</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
