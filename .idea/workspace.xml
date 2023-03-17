@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf99ef33-5be3-4eb6-b124-95c1d5c252e3" name="Changes" comment="">
+    <list default="true" id="bf99ef33-5be3-4eb6-b124-95c1d5c252e3" name="Changes" comment="javitas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/Registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mappa/Sorozat.fooldal.html" beforeDir="false" afterPath="$PROJECT_DIR$/mappa/Sorozat.fooldal.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mappa/Styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/mappa/Styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mappa/sorozathozlinkek.html" beforeDir="false" afterPath="$PROJECT_DIR$/mappa/sorozathozlinkek.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mappa/style3.css" beforeDir="false" afterPath="$PROJECT_DIR$/mappa/style3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mappa/styleee.css" beforeDir="false" afterPath="$PROJECT_DIR$/mappa/styleee.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,58 +19,25 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="CSS File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <favorite-branches>
-      <branch-storage>
-        <map>
-          <entry type="REMOTE">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="origin/Evelin" />
-              </list>
-            </value>
-          </entry>
-        </map>
-      </branch-storage>
-    </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2ImnKpUinb8ckcoWxgNvEISiOpF" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Info/Ssorinet&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Info\Ssorinet\Sorozatok\GameOfThrones" />
-      <recent name="D:\Horvat Evelin 4i\Github\Sorinet\Ssorinet" />
-    </key>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -74,11 +47,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670795565467</updated>
       <workItem from="1670795580991" duration="696000" />
-      <workItem from="1670835681785" duration="134000" />
-      <workItem from="1670840008235" duration="4712000" />
-      <workItem from="1671434318446" duration="147000" />
-      <workItem from="1672750650224" duration="10565000" />
-      <workItem from="1673201271901" duration="9808000" />
+      <workItem from="1670835681785" duration="177000" />
     </task>
     <task id="LOCAL-00001" summary="222.">
       <created>1670795721130</created>
@@ -115,154 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670835810215</updated>
     </task>
-    <task id="LOCAL-00006" summary="javitassa">
-      <created>1670840129376</created>
+    <task id="LOCAL-00006" summary="javitas">
+      <created>1670835849508</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1670840129376</updated>
+      <updated>1670835849508</updated>
     </task>
-    <task id="LOCAL-00007" summary="kereso hatterszin csere">
-      <created>1670840470693</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1670840470693</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Leirasok">
-      <created>1670841702984</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1670841702984</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Frissites">
-      <created>1670843600252</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1670843600252</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Frissites">
-      <created>1670843739441</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1670843739441</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Frissites">
-      <created>1670843980105</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1670843980105</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Frissites">
-      <created>1670844051046</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1670844051046</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Frissites">
-      <created>1670844922119</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1670844922119</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Frissites">
-      <created>1672751430100</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1672751430100</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Frissites">
-      <created>1672751972368</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1672751972368</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Frissites">
-      <created>1672752357265</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1672752357265</updated>
-    </task>
-    <task id="LOCAL-00017" summary="Felh nev:user&#10;jelszo: passw">
-      <created>1672754299078</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1672754299078</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Felh nev:user&#10;jelszo: passw">
-      <created>1672755770822</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1672755770822</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Sorozatok">
-      <created>1672758668193</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1672758668193</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Sorozatok">
-      <created>1672792367987</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1672792367987</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Sorozatok">
-      <created>1672792921566</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1672792921566</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Sorozatok">
-      <created>1672793027892</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1672793027892</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Sorozatok">
-      <created>1672793524732</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1672793524732</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Sorozatok">
-      <created>1673201288772</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1673201288772</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Sorozatok">
-      <created>1673207016612</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1673207016612</updated>
-    </task>
-    <task id="LOCAL-00026" summary="ii">
-      <created>1673214429249</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1673214429249</updated>
-    </task>
-    <option name="localTasksCounter" value="27" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,13 +111,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="222." />
     <MESSAGE value="javitas" />
-    <MESSAGE value="javitassa" />
-    <MESSAGE value="kereso hatterszin csere" />
-    <MESSAGE value="Leirasok" />
-    <MESSAGE value="Frissites" />
-    <MESSAGE value="Felh nev:user&#10;jelszo: passw" />
-    <MESSAGE value="Sorozatok" />
-    <MESSAGE value="ii" />
-    <option name="LAST_COMMIT_MESSAGE" value="ii" />
+    <option name="LAST_COMMIT_MESSAGE" value="javitas" />
   </component>
 </project>
