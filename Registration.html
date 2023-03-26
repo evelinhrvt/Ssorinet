@@ -10,17 +10,17 @@
   <h1>Registration</h1>
   <form method="post">
     <div class="txt_field">
-      <input type="text" required>
+      <input type="text" id = "nev" required>
       <span></span>
       <label>Username</label>
     </div>
     <div class="txt_field">
-      <input type="text" required>
+      <input type="text" id = "email" required>
       <span></span>
       <label>Email</label>
     </div>
     <div class="txt_field">
-      <input type="password" required>
+      <input type="password" id = "jelszo" required>
       <span></span>
       <label>Password</label>
     </div>
@@ -30,10 +30,50 @@
       <label>Password again</label>
     </div>
 
-    <input type="submit" value="Registration">
+    <input type="submit" value="Registration" onclick="trySave()">
     <div class="signup_link">
-      Not a member? <a href="index.html">Signup</a>
+      Already signed up? <a href="index.html">Signup</a>
     </div>
+
+    <div id="loader"></div>
+
+    <script type="application/javascript">
+      let REMOVED_ID = null;
+
+      function trySave(){
+        const loader = document.getElementById("loader");
+        loader.innerText = "Toltes...";
+
+        const lName = document.getElementById("nev").value;
+        const fName = document.getElementById("email").value;
+        const email = document.getElementById("jelszo").value;
+
+        if(lName && fName && email){
+          const xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function (){
+            if(this.readyState == 4 &this.status == 200){
+              const result = JSON.parse(xhttp.responseText);
+              REMOVED_ID = parseInt(result);
+              console.log(result)
+              document.getElementById("loader").innerText = "Sikeres mentes";
+              document.getElementById("removeBtn").removeAttribute("hidden");
+            }
+          }
+
+          const params = new URLSearchParams({
+            "nev": fName,
+            "email": lName,
+            "pass": email,
+          })
+          xhttp.open("GET", "./saveUser.php?" + params.toString())
+          xhttp.send();
+
+        }else {
+          alert("Minden mezot tolts ki");
+        }
+      }
+    </script>
+
   </form>
 </div>
 
