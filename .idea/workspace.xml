@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf99ef33-5be3-4eb6-b124-95c1d5c252e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kepek/IMDB.png" beforeDir="false" afterPath="$PROJECT_DIR$/Kepek/IMDB.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +58,7 @@
       <workItem from="1670835681785" duration="177000" />
       <workItem from="1679259412935" duration="50000" />
       <workItem from="1679334718878" duration="2279000" />
-      <workItem from="1679829349504" duration="3776000" />
+      <workItem from="1679829349504" duration="4433000" />
     </task>
     <task id="LOCAL-00001" summary="222.">
       <created>1670795721130</created>
@@ -110,7 +109,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679832345468</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="javitas">
+      <created>1679833484879</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679833484879</updated>
+    </task>
+    <task id="LOCAL-00009" summary="javitas">
+      <created>1679833506562</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679833506562</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
