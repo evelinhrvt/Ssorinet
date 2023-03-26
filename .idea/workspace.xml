@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf99ef33-5be3-4eb6-b124-95c1d5c252e3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023__01__08__22_57_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2023__01__08__22_57__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/About.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kepek/IMDB.png" beforeDir="false" afterPath="$PROJECT_DIR$/Kepek/IMDB.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Premium.html" beforeDir="false" afterPath="$PROJECT_DIR$/Premium.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rules.html" beforeDir="false" afterPath="$PROJECT_DIR$/Rules.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Search.html" beforeDir="false" afterPath="$PROJECT_DIR$/Search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mappa/Sorozat.fooldal.html" beforeDir="false" afterPath="$PROJECT_DIR$/mappa/Sorozat.fooldal.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mappa/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/mappa/index2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mappa/sorozathozlinkek.html" beforeDir="false" afterPath="$PROJECT_DIR$/mappa/sorozathozlinkek.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style2.css" beforeDir="false" afterPath="$PROJECT_DIR$/style2.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +59,7 @@
       <workItem from="1670835681785" duration="177000" />
       <workItem from="1679259412935" duration="50000" />
       <workItem from="1679334718878" duration="2279000" />
-      <workItem from="1679829349504" duration="2694000" />
+      <workItem from="1679829349504" duration="3776000" />
     </task>
     <task id="LOCAL-00001" summary="222.">
       <created>1670795721130</created>
@@ -115,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670835849508</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="javitas">
+      <created>1679832345468</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679832345468</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
