@@ -1,34 +1,60 @@
+
 <?php
-
-$dbconn = mysqli_connect(
-    "localhost",
-    "root",
-    "",
-    "teszta"
-);
-if (mysqli_connect_error()) {
-    die("HIBA: " . mysqli_connect_error());
+$conn = mysqli_connect("localhost","root","","sorinet");
+if (mysqli_connect_errno()) {
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+    exit();
 }
+// felhasználó azonosítása
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST["email"];
+    $password = $_POST["jelszo"];
 
-if (isset($_GET["firstName"]) && isset($_GET["lastName"]) && isset($_GET["email"]) && isset($_GET["age"])) {
-    $firstName = $_GET["nev"];
-    $mail = $_GET["email"];
-    $pass = $_GET["pass"];
-
-    $sql = "INSERT INTO users (nev, email, pass) 
-        VALUES (?, ?, ?);";
-    $stmt = mysqli_prepare($dbconn, $sql);
-    $stmt->bind_param('ssss', $firstName, $mail, $pass);
-
-    mysqli_stmt_execute($stmt);
-    if (mysqli_stmt_error($stmt)) {
-        die("HIBA: " . mysqli_stmt_error($stmt));
+    $sql = "SELECT id FROM user WHERE email = '$email' AND jelszo = '$password'";
+    $result = mysqli_query($conn, $sql);
+    $count = mysqli_num_rows($result);
+    var_dump($count);
+    // ha a felhasználói adatok helyesek, akkor átirányítunk a főoldalra
+    if($count >= 1) {
+        header("location: index.html");
+    }else {
+        echo "Hibás felhasználónév vagy jelszó!";
     }
-
-    $id = mysqli_insert_id($dbconn);
-    echo json_encode($id);
-
-} else {
-    echo json_encode("Missing arguments!");
 }
+?>
 
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="center">
+    <h1>Login</h1>
+    <form method="post" action="Login.php">
+        <div class="txt_field">
+            <input id="email" type="text" name="email" required>
+            <span></span>
+            <label>Email</label>
+        </div>
+        <div class="txt_field">
+            <input id="pass" type="password" name="jelszo" required>
+            <span></span>
+            <label>Password</label>
+        </div>
+
+        <input type="submit" value="Login">
+
+
+        <div class="signup_link">
+            A member? <a href="Registration.html">Signup</a>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>

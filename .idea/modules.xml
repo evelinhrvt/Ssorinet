@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Ssorinet.iml" filepath="$PROJECT_DIR$/.idea/Ssorinet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Sorinet.iml" filepath="$PROJECT_DIR$/.idea/Sorinet.iml" />
     </modules>
   </component>
 </project>
