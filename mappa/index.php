@@ -1,6 +1,7 @@
-
 <?php
-$conn = mysqli_connect("localhost","root","","sorinet");
+
+
+$conn = mysqli_connect("localhost", "root", "", "sorinet");
 if (mysqli_connect_errno()) {
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
     exit();
@@ -15,9 +16,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $count = mysqli_num_rows($result);
     var_dump($count);
     // ha a felhasználói adatok helyesek, akkor átirányítunk a főoldalra
-    if($count >= 1) {
+    if ($count >= 1) {
         header("location: index.html");
-    }else {
+    } else {
         echo "Hibás felhasználónév vagy jelszó!";
     }
 }
