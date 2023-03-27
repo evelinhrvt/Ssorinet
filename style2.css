@@ -85,3 +85,25 @@ nav a:nth-child(5):hover~.animation{
   width: 120px;
   left: 470px;
 }
+
+.box{
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  display: inline-block;
+  width: 150px;
+  height: 200px;
+  margin: 2px;
+}
+
+.kep{
+  display: inline-block;
+  border-radius: 20px;
+  width: 145px;
+  height: 195px;
+  margin: 5px;
+
+}

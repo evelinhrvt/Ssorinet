@@ -44,7 +44,7 @@
 <nav>
   <a href="Home.html">Home</a>
   <a href="Rules.html">Rules</a>
-  <a class="active" href="Premium.html">Profile</a>
+  <a class="active" href="Premium.php">Profile</a>
   <a href="Search.html">Search</a>
   <div class="animation start-home"></div>
 </nav>
