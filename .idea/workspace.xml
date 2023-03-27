@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf99ef33-5be3-4eb6-b124-95c1d5c252e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Login.php" afterDir="false" />
+    <list default="true" id="bf99ef33-5be3-4eb6-b124-95c1d5c252e3" name="Changes" comment="javitas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kepek/IMDB.png" beforeDir="false" afterPath="$PROJECT_DIR$/Kepek/IMDB.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/Registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mappa/Sorozat.fooldal.html" beforeDir="false" afterPath="$PROJECT_DIR$/mappa/Sorozat.fooldal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mappa/Styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/mappa/Styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mappa/sorozathozlinkek.html" beforeDir="false" afterPath="$PROJECT_DIR$/mappa/sorozathozlinkek.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mappa/style3.css" beforeDir="false" afterPath="$PROJECT_DIR$/mappa/style3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mappa/styleee.css" beforeDir="false" afterPath="$PROJECT_DIR$/mappa/styleee.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,37 +19,22 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="CSS File" />
-        <option value="HTML File" />
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2ImnKpUinb8ckcoWxgNvEISiOpF" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -58,10 +48,6 @@
       <updated>1670795565467</updated>
       <workItem from="1670795580991" duration="696000" />
       <workItem from="1670835681785" duration="177000" />
-      <workItem from="1679259412935" duration="50000" />
-      <workItem from="1679334718878" duration="2279000" />
-      <workItem from="1679829349504" duration="4446000" />
-      <workItem from="1679855074691" duration="2656000" />
     </task>
     <task id="LOCAL-00001" summary="222.">
       <created>1670795721130</created>
@@ -105,42 +91,7 @@
       <option name="project" value="LOCAL" />
       <updated>1670835849508</updated>
     </task>
-    <task id="LOCAL-00007" summary="javitas">
-      <created>1679832345468</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1679832345468</updated>
-    </task>
-    <task id="LOCAL-00008" summary="javitas">
-      <created>1679833484879</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1679833484879</updated>
-    </task>
-    <task id="LOCAL-00009" summary="javitas">
-      <created>1679833506562</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1679833506562</updated>
-    </task>
-    <task id="LOCAL-00010" summary="javitas">
-      <created>1679840871127</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1679840871127</updated>
-    </task>
-    <task id="LOCAL-00011" summary="ok">
-      <created>1679866375782</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1679866375782</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +111,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="222." />
     <MESSAGE value="javitas" />
-    <MESSAGE value="ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="javitas" />
   </component>
 </project>
