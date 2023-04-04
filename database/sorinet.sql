@@ -1,129 +1,328 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
--- https://www.phpmyadmin.net/
+-- version 3.2.0.1
+-- http://www.phpmyadmin.net
 --
--- Gép: 127.0.0.1
--- Létrehozás ideje: 2023. Már 29. 20:08
--- Kiszolgáló verziója: 10.4.24-MariaDB
--- PHP verzió: 8.1.6
+-- Host: localhost
+-- Generation Time: Apr 04, 2023 at 01:21 PM
+-- Server version: 5.1.36
+-- PHP Version: 5.3.0
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
 --
--- Adatbázis: `sorinet`
+-- Database: `sorinet`
 --
 
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `link`
+-- Table structure for table `link`
 --
 
-CREATE TABLE `link` (
-  `id` int(50) NOT NULL DEFAULT 0,
-  `linek` varchar(500) NOT NULL,
-  `resz` int(50) NOT NULL,
-  `sorozatid` int(50) NOT NULL,
-  `hostnev` varchar(100) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+CREATE TABLE IF NOT EXISTS `link` (
+    `id` int(50) NOT NULL DEFAULT '0',
+    `linek` varchar(500) NOT NULL,
+    `resz` int(50) NOT NULL,
+    `sorozatid` int(50) NOT NULL,
+    `hostnev` varchar(100) NOT NULL,
+    PRIMARY KEY (`id`)
+    ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- A tábla adatainak kiíratása `link`
+-- Dumping data for table `link`
 --
 
 INSERT INTO `link` (`id`, `linek`, `resz`, `sorozatid`, `hostnev`) VALUES
-(1, 'https://jobbmintatv.hu/online/A_Tronok_Harca/1_evad/1_resz/90514', 1, 1, 'Jobbmintatv.hu');
+    (1, 'https://jobbmintatv.hu/online/A_Tronok_Harca/1_evad/1_resz/90514', 1, 1, 'Jobbmintatv.hu');
 
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `sorozat`
+-- Table structure for table `sorozat`
 --
 
-CREATE TABLE `sorozat` (
-  `id` int(100) NOT NULL,
-  `nev` varchar(50) NOT NULL,
-  `imd` varchar(100) NOT NULL,
-  `kep` varchar(100) NOT NULL,
-  `leiras` varchar(100) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+CREATE TABLE IF NOT EXISTS `sorozat` (
+    `id` int(100) NOT NULL AUTO_INCREMENT,
+    `nev` varchar(50) NOT NULL,
+    `imd` varchar(100) NOT NULL,
+    `kep` varchar(100) NOT NULL,
+    `leiras` varchar(100) NOT NULL,
+    PRIMARY KEY (`id`)
+    ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=250 ;
 
 --
--- A tábla adatainak kiíratása `sorozat`
+-- Dumping data for table `sorozat`
 --
 
 INSERT INTO `sorozat` (`id`, `nev`, `imd`, `kep`, `leiras`) VALUES
-(1, 'Game of Thrones', 'https://www.imdb.com/title/tt0944947/', 'GoT.jpg', 'In the mythical continent of Westeros, several powerful families fight for control of the Seven King'),
-(2, 'Lucifer', 'https://www.google.com', 'Lucifer.jpg', 'description');
+                                                                (1, 'Game of Thrones', 'https://www.imdb.com/title/tt0944947/', 'GameOfThrones.jpg', 'In the mythical continent of Westeros, several powerful families fight for control of the Seven King'),
+                                                                (2, '104 Room', 'https://www.imdb.com/title/tt6064882/', '104Room.jpg', 'Anthology series set in room 104 of a seemingly average American motel, each time telling a differen'),
+                                                                (3, 'Clickbait', 'https://www.imdb.com/title/tt10888878/?ref_=nv_sr_srsg_0', 'ClickBait.jpg', 'When family man Nick Brewer is abducted in a crime with a sinister online twist, those closest to hi'),
+                                                                (4, 'Cobra Kai', 'https://www.imdb.com/title/tt7221388/?ref_=fn_al_tt_1', 'CobraKai.jpg', 'Decades after their 1984 All Valley Karate Tournament bout, a middle-aged Daniel LaRusso and Johnny '),
+                                                                (5, 'Criminal Minds', 'https://www.imdb.com/title/tt0452046/?ref_=nv_sr_srsg_0', 'CriminalMinds.jpg', 'A group of criminal profilers who work for the FBI as members of its Behavioral Analysis Unit (BAU) '),
+                                                                (6, 'CSI Miami', 'https://www.imdb.com/title/tt0313043/?ref_=nv_sr_srsg_0', 'CSIMiami.jpg', 'Follows the cases of the Miami-Dade Police Department''s Crime Scene Investigation unit as they try t'),
+                                                                (7, 'Echo 3', 'https://www.imdb.com/title/tt12762512/?ref_=nv_sr_srsg_0', 'Echo3.jpg', 'When Amber Chesborough goes missing along the Colombia-Venezuela border, her brother and her husband'),
+                                                                (8, 'Emily In Paris', 'https://www.imdb.com/title/tt8962124/?ref_=nv_sr_srsg_0', 'EmilyInParis.jpg', 'A young American woman from the Midwest is hired by a marketing firm in Paris to provide them with a'),
+                                                                (9, 'Family Guy', 'https://www.imdb.com/title/tt0182576/?ref_=nv_sr_srsg_3', 'FamilyGuy.jpg', 'In a wacky Rhode Island town, a dysfunctional family strives to cope with everyday life as they are '),
+                                                                (10, 'Grey''s Anatomy', 'https://www.imdb.com/title/tt0413573/?ref_=nv_sr_srsg_0', 'GreysAnathomy.jpg', 'A drama centered on the personal and professional lives of five surgical interns and their superviso'),
+                                                                (11, 'Money Heist', 'https://www.imdb.com/title/tt6468322/?ref_=fn_al_tt_1', 'MoneyHeist.jpg', 'An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - steal'),
+                                                                (12, 'Lucifer', 'https://www.imdb.com/title/tt4052886/?ref_=nv_sr_srsg_0', 'Lucifer.jpg', 'Lucifer Morningstar has decided he''s had enough of being the dutiful servant in Hell and decides to '),
+                                                                (13, 'Narcos', 'https://www.imdb.com/title/tt2707408/?ref_=fn_al_tt_1', 'Narcos.jpg', 'A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar, as well as the many'),
+                                                                (14, 'Ozark', 'https://www.imdb.com/title/tt5071412/?ref_=nv_sr_srsg_0', 'Ozarl.jpg', 'A financial advisor drags his family from Chicago to the Missouri Ozarks, where he must launder mone'),
+                                                                (15, 'Peaky Blinders', 'https://www.imdb.com/title/tt2442560/?ref_=nv_sr_srsg_1', 'PeakyBlinder.jpg', 'A gangster family epic set in 1900s England, centering on a gang who sew razor blades in the peaks o'),
+                                                                (16, 'Sex Education', 'https://www.imdb.com/title/tt7767422/?ref_=nv_sr_srsg_0', 'sexeducation.jpg', 'A teenage boy with a sex therapist mother teams up with a high school classmate to set up an undergr'),
+                                                                (17, 'Sisi', 'https://www.imdb.com/title/tt11269100/plotsummary/?ref_=tt_ov_pl', 'Sisi.jpg', '"Sisi" follows the extraordinary life of empress Elisabeth of Austria. Modern, honest, and authentic'),
+                                                                (18, 'Stranger Things', 'https://www.imdb.com/title/tt4574334/?ref_=nv_sr_srsg_0', 'StrangerThings.jpg', 'When a young boy disappears, his mother, a police chief and his friends must confront terrifying sup'),
+                                                                (19, 'Supoernatural', 'https://www.imdb.com/title/tt0460681/?ref_=nv_sr_srsg_2', 'SuperNatural.jpg', 'Two brothers follow their father''s footsteps as hunters, fighting evil supernatural beings of many k'),
+                                                                (20, 'The Big Bang Theory', 'https://www.imdb.com/title/tt0898266/?ref_=nv_sr_srsg_0', 'TheBigBangTheory.jpg', 'A woman who moves into an apartment across the hall from two brilliant but socially awkward physicis'),
+                                                                (21, 'The End Of The Fucking World', 'https://www.imdb.com/title/tt6257970/?ref_=nv_sr_srsg_1', 'TheEndOfTheFuckingWorld.jpg', 'James is 17 and is pretty sure he is a psychopath. Alyssa, also 17, is the cool and moody new girl a'),
+                                                                (22, '104 Room', 'https://www.imdb.com/title/tt6064882/', '104Room.jpg', 'Anthology series set in room 104 of a seemingly average American motel, each time telling a differen'),
+                                                                (23, 'Clickbait', 'https://www.imdb.com/title/tt10888878/?ref_=nv_sr_srsg_0', 'ClickBait.jpg', 'When family man Nick Brewer is abducted in a crime with a sinister online twist, those closest to hi'),
+                                                                (24, 'Cobra Kai', 'https://www.imdb.com/title/tt7221388/?ref_=fn_al_tt_1', 'CobraKai.jpg', 'Decades after their 1984 All Valley Karate Tournament bout, a middle-aged Daniel LaRusso and Johnny '),
+                                                                (25, 'Criminal Minds', 'https://www.imdb.com/title/tt0452046/?ref_=nv_sr_srsg_0', 'CriminalMinds.jpg', 'A group of criminal profilers who work for the FBI as members of its Behavioral Analysis Unit (BAU) '),
+                                                                (26, 'CSI Miami', 'https://www.imdb.com/title/tt0313043/?ref_=nv_sr_srsg_0', 'CSIMiami.jpg', 'Follows the cases of the Miami-Dade Police Department''s Crime Scene Investigation unit as they try t'),
+                                                                (27, 'Echo 3', 'https://www.imdb.com/title/tt12762512/?ref_=nv_sr_srsg_0', 'Echo3.jpg', 'When Amber Chesborough goes missing along the Colombia-Venezuela border, her brother and her husband'),
+                                                                (28, 'Emily In Paris', 'https://www.imdb.com/title/tt8962124/?ref_=nv_sr_srsg_0', 'EmilyInParis.jpg', 'A young American woman from the Midwest is hired by a marketing firm in Paris to provide them with a'),
+                                                                (29, 'Family Guy', 'https://www.imdb.com/title/tt0182576/?ref_=nv_sr_srsg_3', 'FamilyGuy.jpg', 'In a wacky Rhode Island town, a dysfunctional family strives to cope with everyday life as they are '),
+                                                                (30, 'Grey''s Anatomy', 'https://www.imdb.com/title/tt0413573/?ref_=nv_sr_srsg_0', 'GreysAnathomy.jpg', 'A drama centered on the personal and professional lives of five surgical interns and their superviso'),
+                                                                (31, 'Money Heist', 'https://www.imdb.com/title/tt6468322/?ref_=fn_al_tt_1', 'MoneyHeist.jpg', 'An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - steal'),
+                                                                (32, 'Lucifer', 'https://www.imdb.com/title/tt4052886/?ref_=nv_sr_srsg_0', 'Lucifer.jpg', 'Lucifer Morningstar has decided he''s had enough of being the dutiful servant in Hell and decides to '),
+                                                                (33, 'Narcos', 'https://www.imdb.com/title/tt2707408/?ref_=fn_al_tt_1', 'Narcos.jpg', 'A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar, as well as the many'),
+                                                                (34, 'Ozark', 'https://www.imdb.com/title/tt5071412/?ref_=nv_sr_srsg_0', 'Ozarl.jpg', 'A financial advisor drags his family from Chicago to the Missouri Ozarks, where he must launder mone'),
+                                                                (35, 'Peaky Blinders', 'https://www.imdb.com/title/tt2442560/?ref_=nv_sr_srsg_1', 'PeakyBlinder.jpg', 'A gangster family epic set in 1900s England, centering on a gang who sew razor blades in the peaks o'),
+                                                                (36, 'Sex Education', 'https://www.imdb.com/title/tt7767422/?ref_=nv_sr_srsg_0', 'sexeducation.jpg', 'A teenage boy with a sex therapist mother teams up with a high school classmate to set up an undergr'),
+                                                                (37, 'Sisi', 'https://www.imdb.com/title/tt11269100/plotsummary/?ref_=tt_ov_pl', 'Sisi.jpg', '"Sisi" follows the extraordinary life of empress Elisabeth of Austria. Modern, honest, and authentic'),
+                                                                (38, 'Stranger Things', 'https://www.imdb.com/title/tt4574334/?ref_=nv_sr_srsg_0', 'StrangerThings.jpg', 'When a young boy disappears, his mother, a police chief and his friends must confront terrifying sup'),
+                                                                (39, 'Supoernatural', 'https://www.imdb.com/title/tt0460681/?ref_=nv_sr_srsg_2', 'SuperNatural.jpg', 'Two brothers follow their father''s footsteps as hunters, fighting evil supernatural beings of many k'),
+                                                                (40, 'The Big Bang Theory', 'https://www.imdb.com/title/tt0898266/?ref_=nv_sr_srsg_0', 'TheBigBangTheory.jpg', 'A woman who moves into an apartment across the hall from two brilliant but socially awkward physicis'),
+                                                                (41, 'The End Of The Fucking World', 'https://www.imdb.com/title/tt6257970/?ref_=nv_sr_srsg_1', 'TheEndOfTheFuckingWorld.jpg', 'James is 17 and is pretty sure he is a psychopath. Alyssa, also 17, is the cool and moody new girl a'),
+                                                                (42, '104 Room', 'https://www.imdb.com/title/tt6064882/', '104Room.jpg', 'Anthology series set in room 104 of a seemingly average American motel, each time telling a differen'),
+                                                                (43, 'Clickbait', 'https://www.imdb.com/title/tt10888878/?ref_=nv_sr_srsg_0', 'ClickBait.jpg', 'When family man Nick Brewer is abducted in a crime with a sinister online twist, those closest to hi'),
+                                                                (44, 'Cobra Kai', 'https://www.imdb.com/title/tt7221388/?ref_=fn_al_tt_1', 'CobraKai.jpg', 'Decades after their 1984 All Valley Karate Tournament bout, a middle-aged Daniel LaRusso and Johnny '),
+                                                                (45, 'Criminal Minds', 'https://www.imdb.com/title/tt0452046/?ref_=nv_sr_srsg_0', 'CriminalMinds.jpg', 'A group of criminal profilers who work for the FBI as members of its Behavioral Analysis Unit (BAU) '),
+                                                                (46, 'CSI Miami', 'https://www.imdb.com/title/tt0313043/?ref_=nv_sr_srsg_0', 'CSIMiami.jpg', 'Follows the cases of the Miami-Dade Police Department''s Crime Scene Investigation unit as they try t'),
+                                                                (47, 'Echo 3', 'https://www.imdb.com/title/tt12762512/?ref_=nv_sr_srsg_0', 'Echo3.jpg', 'When Amber Chesborough goes missing along the Colombia-Venezuela border, her brother and her husband'),
+                                                                (48, 'Emily In Paris', 'https://www.imdb.com/title/tt8962124/?ref_=nv_sr_srsg_0', 'EmilyInParis.jpg', 'A young American woman from the Midwest is hired by a marketing firm in Paris to provide them with a'),
+                                                                (49, 'Family Guy', 'https://www.imdb.com/title/tt0182576/?ref_=nv_sr_srsg_3', 'FamilyGuy.jpg', 'In a wacky Rhode Island town, a dysfunctional family strives to cope with everyday life as they are '),
+                                                                (50, 'Grey''s Anatomy', 'https://www.imdb.com/title/tt0413573/?ref_=nv_sr_srsg_0', 'GreysAnathomy.jpg', 'A drama centered on the personal and professional lives of five surgical interns and their superviso'),
+                                                                (51, 'Money Heist', 'https://www.imdb.com/title/tt6468322/?ref_=fn_al_tt_1', 'MoneyHeist.jpg', 'An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - steal'),
+                                                                (52, 'Lucifer', 'https://www.imdb.com/title/tt4052886/?ref_=nv_sr_srsg_0', 'Lucifer.jpg', 'Lucifer Morningstar has decided he''s had enough of being the dutiful servant in Hell and decides to '),
+                                                                (53, 'Narcos', 'https://www.imdb.com/title/tt2707408/?ref_=fn_al_tt_1', 'Narcos.jpg', 'A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar, as well as the many'),
+                                                                (54, 'Ozark', 'https://www.imdb.com/title/tt5071412/?ref_=nv_sr_srsg_0', 'Ozarl.jpg', 'A financial advisor drags his family from Chicago to the Missouri Ozarks, where he must launder mone'),
+                                                                (55, 'Peaky Blinders', 'https://www.imdb.com/title/tt2442560/?ref_=nv_sr_srsg_1', 'PeakyBlinder.jpg', 'A gangster family epic set in 1900s England, centering on a gang who sew razor blades in the peaks o'),
+                                                                (56, 'Sex Education', 'https://www.imdb.com/title/tt7767422/?ref_=nv_sr_srsg_0', 'sexeducation.jpg', 'A teenage boy with a sex therapist mother teams up with a high school classmate to set up an undergr'),
+                                                                (57, 'Sisi', 'https://www.imdb.com/title/tt11269100/plotsummary/?ref_=tt_ov_pl', 'Sisi.jpg', '"Sisi" follows the extraordinary life of empress Elisabeth of Austria. Modern, honest, and authentic'),
+                                                                (58, 'Stranger Things', 'https://www.imdb.com/title/tt4574334/?ref_=nv_sr_srsg_0', 'StrangerThings.jpg', 'When a young boy disappears, his mother, a police chief and his friends must confront terrifying sup'),
+                                                                (59, 'Supoernatural', 'https://www.imdb.com/title/tt0460681/?ref_=nv_sr_srsg_2', 'SuperNatural.jpg', 'Two brothers follow their father''s footsteps as hunters, fighting evil supernatural beings of many k'),
+                                                                (60, 'The Big Bang Theory', 'https://www.imdb.com/title/tt0898266/?ref_=nv_sr_srsg_0', 'TheBigBangTheory.jpg', 'A woman who moves into an apartment across the hall from two brilliant but socially awkward physicis'),
+                                                                (61, 'The End Of The Fucking World', 'https://www.imdb.com/title/tt6257970/?ref_=nv_sr_srsg_1', 'TheEndOfTheFuckingWorld.jpg', 'James is 17 and is pretty sure he is a psychopath. Alyssa, also 17, is the cool and moody new girl a'),
+                                                                (62, '104 Room', 'https://www.imdb.com/title/tt6064882/', '104Room.jpg', 'Anthology series set in room 104 of a seemingly average American motel, each time telling a differen'),
+                                                                (63, 'Clickbait', 'https://www.imdb.com/title/tt10888878/?ref_=nv_sr_srsg_0', 'ClickBait.jpg', 'When family man Nick Brewer is abducted in a crime with a sinister online twist, those closest to hi'),
+                                                                (64, 'Cobra Kai', 'https://www.imdb.com/title/tt7221388/?ref_=fn_al_tt_1', 'CobraKai.jpg', 'Decades after their 1984 All Valley Karate Tournament bout, a middle-aged Daniel LaRusso and Johnny '),
+                                                                (65, 'Criminal Minds', 'https://www.imdb.com/title/tt0452046/?ref_=nv_sr_srsg_0', 'CriminalMinds.jpg', 'A group of criminal profilers who work for the FBI as members of its Behavioral Analysis Unit (BAU) '),
+                                                                (66, 'CSI Miami', 'https://www.imdb.com/title/tt0313043/?ref_=nv_sr_srsg_0', 'CSIMiami.jpg', 'Follows the cases of the Miami-Dade Police Department''s Crime Scene Investigation unit as they try t'),
+                                                                (67, 'Echo 3', 'https://www.imdb.com/title/tt12762512/?ref_=nv_sr_srsg_0', 'Echo3.jpg', 'When Amber Chesborough goes missing along the Colombia-Venezuela border, her brother and her husband'),
+                                                                (68, 'Emily In Paris', 'https://www.imdb.com/title/tt8962124/?ref_=nv_sr_srsg_0', 'EmilyInParis.jpg', 'A young American woman from the Midwest is hired by a marketing firm in Paris to provide them with a'),
+                                                                (69, 'Family Guy', 'https://www.imdb.com/title/tt0182576/?ref_=nv_sr_srsg_3', 'FamilyGuy.jpg', 'In a wacky Rhode Island town, a dysfunctional family strives to cope with everyday life as they are '),
+                                                                (70, 'Grey''s Anatomy', 'https://www.imdb.com/title/tt0413573/?ref_=nv_sr_srsg_0', 'GreysAnathomy.jpg', 'A drama centered on the personal and professional lives of five surgical interns and their superviso'),
+                                                                (71, 'Money Heist', 'https://www.imdb.com/title/tt6468322/?ref_=fn_al_tt_1', 'MoneyHeist.jpg', 'An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - steal'),
+                                                                (72, 'Lucifer', 'https://www.imdb.com/title/tt4052886/?ref_=nv_sr_srsg_0', 'Lucifer.jpg', 'Lucifer Morningstar has decided he''s had enough of being the dutiful servant in Hell and decides to '),
+                                                                (73, 'Narcos', 'https://www.imdb.com/title/tt2707408/?ref_=fn_al_tt_1', 'Narcos.jpg', 'A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar, as well as the many'),
+                                                                (74, 'Ozark', 'https://www.imdb.com/title/tt5071412/?ref_=nv_sr_srsg_0', 'Ozarl.jpg', 'A financial advisor drags his family from Chicago to the Missouri Ozarks, where he must launder mone'),
+                                                                (75, 'Peaky Blinders', 'https://www.imdb.com/title/tt2442560/?ref_=nv_sr_srsg_1', 'PeakyBlinder.jpg', 'A gangster family epic set in 1900s England, centering on a gang who sew razor blades in the peaks o'),
+                                                                (76, 'Sex Education', 'https://www.imdb.com/title/tt7767422/?ref_=nv_sr_srsg_0', 'sexeducation.jpg', 'A teenage boy with a sex therapist mother teams up with a high school classmate to set up an undergr'),
+                                                                (77, 'Sisi', 'https://www.imdb.com/title/tt11269100/plotsummary/?ref_=tt_ov_pl', 'Sisi.jpg', '"Sisi" follows the extraordinary life of empress Elisabeth of Austria. Modern, honest, and authentic'),
+                                                                (78, 'Stranger Things', 'https://www.imdb.com/title/tt4574334/?ref_=nv_sr_srsg_0', 'StrangerThings.jpg', 'When a young boy disappears, his mother, a police chief and his friends must confront terrifying sup'),
+                                                                (79, 'Supoernatural', 'https://www.imdb.com/title/tt0460681/?ref_=nv_sr_srsg_2', 'SuperNatural.jpg', 'Two brothers follow their father''s footsteps as hunters, fighting evil supernatural beings of many k'),
+                                                                (80, 'The Big Bang Theory', 'https://www.imdb.com/title/tt0898266/?ref_=nv_sr_srsg_0', 'TheBigBangTheory.jpg', 'A woman who moves into an apartment across the hall from two brilliant but socially awkward physicis'),
+                                                                (81, 'The End Of The Fucking World', 'https://www.imdb.com/title/tt6257970/?ref_=nv_sr_srsg_1', 'TheEndOfTheFuckingWorld.jpg', 'James is 17 and is pretty sure he is a psychopath. Alyssa, also 17, is the cool and moody new girl a'),
+                                                                (82, '104 Room', 'https://www.imdb.com/title/tt6064882/', '104Room.jpg', 'Anthology series set in room 104 of a seemingly average American motel, each time telling a differen'),
+                                                                (83, 'Clickbait', 'https://www.imdb.com/title/tt10888878/?ref_=nv_sr_srsg_0', 'ClickBait.jpg', 'When family man Nick Brewer is abducted in a crime with a sinister online twist, those closest to hi'),
+                                                                (84, 'Cobra Kai', 'https://www.imdb.com/title/tt7221388/?ref_=fn_al_tt_1', 'CobraKai.jpg', 'Decades after their 1984 All Valley Karate Tournament bout, a middle-aged Daniel LaRusso and Johnny '),
+                                                                (85, 'Criminal Minds', 'https://www.imdb.com/title/tt0452046/?ref_=nv_sr_srsg_0', 'CriminalMinds.jpg', 'A group of criminal profilers who work for the FBI as members of its Behavioral Analysis Unit (BAU) '),
+                                                                (86, 'CSI Miami', 'https://www.imdb.com/title/tt0313043/?ref_=nv_sr_srsg_0', 'CSIMiami.jpg', 'Follows the cases of the Miami-Dade Police Department''s Crime Scene Investigation unit as they try t'),
+                                                                (87, 'Echo 3', 'https://www.imdb.com/title/tt12762512/?ref_=nv_sr_srsg_0', 'Echo3.jpg', 'When Amber Chesborough goes missing along the Colombia-Venezuela border, her brother and her husband'),
+                                                                (88, 'Emily In Paris', 'https://www.imdb.com/title/tt8962124/?ref_=nv_sr_srsg_0', 'EmilyInParis.jpg', 'A young American woman from the Midwest is hired by a marketing firm in Paris to provide them with a'),
+                                                                (89, 'Family Guy', 'https://www.imdb.com/title/tt0182576/?ref_=nv_sr_srsg_3', 'FamilyGuy.jpg', 'In a wacky Rhode Island town, a dysfunctional family strives to cope with everyday life as they are '),
+                                                                (90, 'Grey''s Anatomy', 'https://www.imdb.com/title/tt0413573/?ref_=nv_sr_srsg_0', 'GreysAnathomy.jpg', 'A drama centered on the personal and professional lives of five surgical interns and their superviso'),
+                                                                (91, 'Money Heist', 'https://www.imdb.com/title/tt6468322/?ref_=fn_al_tt_1', 'MoneyHeist.jpg', 'An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - steal'),
+                                                                (92, 'Lucifer', 'https://www.imdb.com/title/tt4052886/?ref_=nv_sr_srsg_0', 'Lucifer.jpg', 'Lucifer Morningstar has decided he''s had enough of being the dutiful servant in Hell and decides to '),
+                                                                (93, 'Narcos', 'https://www.imdb.com/title/tt2707408/?ref_=fn_al_tt_1', 'Narcos.jpg', 'A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar, as well as the many'),
+                                                                (94, 'Ozark', 'https://www.imdb.com/title/tt5071412/?ref_=nv_sr_srsg_0', 'Ozarl.jpg', 'A financial advisor drags his family from Chicago to the Missouri Ozarks, where he must launder mone'),
+                                                                (95, 'Peaky Blinders', 'https://www.imdb.com/title/tt2442560/?ref_=nv_sr_srsg_1', 'PeakyBlinder.jpg', 'A gangster family epic set in 1900s England, centering on a gang who sew razor blades in the peaks o'),
+                                                                (96, 'Sex Education', 'https://www.imdb.com/title/tt7767422/?ref_=nv_sr_srsg_0', 'sexeducation.jpg', 'A teenage boy with a sex therapist mother teams up with a high school classmate to set up an undergr'),
+                                                                (97, 'Sisi', 'https://www.imdb.com/title/tt11269100/plotsummary/?ref_=tt_ov_pl', 'Sisi.jpg', '"Sisi" follows the extraordinary life of empress Elisabeth of Austria. Modern, honest, and authentic'),
+                                                                (98, 'Stranger Things', 'https://www.imdb.com/title/tt4574334/?ref_=nv_sr_srsg_0', 'StrangerThings.jpg', 'When a young boy disappears, his mother, a police chief and his friends must confront terrifying sup'),
+                                                                (99, 'Supoernatural', 'https://www.imdb.com/title/tt0460681/?ref_=nv_sr_srsg_2', 'SuperNatural.jpg', 'Two brothers follow their father''s footsteps as hunters, fighting evil supernatural beings of many k'),
+                                                                (100, 'The Big Bang Theory', 'https://www.imdb.com/title/tt0898266/?ref_=nv_sr_srsg_0', 'TheBigBangTheory.jpg', 'A woman who moves into an apartment across the hall from two brilliant but socially awkward physicis'),
+                                                                (101, 'The End Of The Fucking World', 'https://www.imdb.com/title/tt6257970/?ref_=nv_sr_srsg_1', 'TheEndOfTheFuckingWorld.jpg', 'James is 17 and is pretty sure he is a psychopath. Alyssa, also 17, is the cool and moody new girl a'),
+                                                                (102, '104 Room', 'https://www.imdb.com/title/tt6064882/', '104Room.jpg', 'Anthology series set in room 104 of a seemingly average American motel, each time telling a differen'),
+                                                                (103, 'Clickbait', 'https://www.imdb.com/title/tt10888878/?ref_=nv_sr_srsg_0', 'ClickBait.jpg', 'When family man Nick Brewer is abducted in a crime with a sinister online twist, those closest to hi'),
+                                                                (104, 'Cobra Kai', 'https://www.imdb.com/title/tt7221388/?ref_=fn_al_tt_1', 'CobraKai.jpg', 'Decades after their 1984 All Valley Karate Tournament bout, a middle-aged Daniel LaRusso and Johnny '),
+                                                                (105, 'Criminal Minds', 'https://www.imdb.com/title/tt0452046/?ref_=nv_sr_srsg_0', 'CriminalMinds.jpg', 'A group of criminal profilers who work for the FBI as members of its Behavioral Analysis Unit (BAU) '),
+                                                                (106, 'CSI Miami', 'https://www.imdb.com/title/tt0313043/?ref_=nv_sr_srsg_0', 'CSIMiami.jpg', 'Follows the cases of the Miami-Dade Police Department''s Crime Scene Investigation unit as they try t'),
+                                                                (107, 'Echo 3', 'https://www.imdb.com/title/tt12762512/?ref_=nv_sr_srsg_0', 'Echo3.jpg', 'When Amber Chesborough goes missing along the Colombia-Venezuela border, her brother and her husband'),
+                                                                (108, 'Emily In Paris', 'https://www.imdb.com/title/tt8962124/?ref_=nv_sr_srsg_0', 'EmilyInParis.jpg', 'A young American woman from the Midwest is hired by a marketing firm in Paris to provide them with a'),
+                                                                (109, 'Family Guy', 'https://www.imdb.com/title/tt0182576/?ref_=nv_sr_srsg_3', 'FamilyGuy.jpg', 'In a wacky Rhode Island town, a dysfunctional family strives to cope with everyday life as they are '),
+                                                                (110, 'Grey''s Anatomy', 'https://www.imdb.com/title/tt0413573/?ref_=nv_sr_srsg_0', 'GreysAnathomy.jpg', 'A drama centered on the personal and professional lives of five surgical interns and their superviso'),
+                                                                (111, 'Money Heist', 'https://www.imdb.com/title/tt6468322/?ref_=fn_al_tt_1', 'MoneyHeist.jpg', 'An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - steal'),
+                                                                (112, 'Lucifer', 'https://www.imdb.com/title/tt4052886/?ref_=nv_sr_srsg_0', 'Lucifer.jpg', 'Lucifer Morningstar has decided he''s had enough of being the dutiful servant in Hell and decides to '),
+                                                                (113, 'Narcos', 'https://www.imdb.com/title/tt2707408/?ref_=fn_al_tt_1', 'Narcos.jpg', 'A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar, as well as the many'),
+                                                                (114, 'Ozark', 'https://www.imdb.com/title/tt5071412/?ref_=nv_sr_srsg_0', 'Ozarl.jpg', 'A financial advisor drags his family from Chicago to the Missouri Ozarks, where he must launder mone'),
+                                                                (115, 'Peaky Blinders', 'https://www.imdb.com/title/tt2442560/?ref_=nv_sr_srsg_1', 'PeakyBlinder.jpg', 'A gangster family epic set in 1900s England, centering on a gang who sew razor blades in the peaks o'),
+                                                                (116, 'Sex Education', 'https://www.imdb.com/title/tt7767422/?ref_=nv_sr_srsg_0', 'sexeducation.jpg', 'A teenage boy with a sex therapist mother teams up with a high school classmate to set up an undergr'),
+                                                                (117, 'Sisi', 'https://www.imdb.com/title/tt11269100/plotsummary/?ref_=tt_ov_pl', 'Sisi.jpg', '"Sisi" follows the extraordinary life of empress Elisabeth of Austria. Modern, honest, and authentic'),
+                                                                (118, 'Stranger Things', 'https://www.imdb.com/title/tt4574334/?ref_=nv_sr_srsg_0', 'StrangerThings.jpg', 'When a young boy disappears, his mother, a police chief and his friends must confront terrifying sup'),
+                                                                (119, 'Supoernatural', 'https://www.imdb.com/title/tt0460681/?ref_=nv_sr_srsg_2', 'SuperNatural.jpg', 'Two brothers follow their father''s footsteps as hunters, fighting evil supernatural beings of many k'),
+                                                                (120, 'The Big Bang Theory', 'https://www.imdb.com/title/tt0898266/?ref_=nv_sr_srsg_0', 'TheBigBangTheory.jpg', 'A woman who moves into an apartment across the hall from two brilliant but socially awkward physicis'),
+                                                                (121, 'The End Of The Fucking World', 'https://www.imdb.com/title/tt6257970/?ref_=nv_sr_srsg_1', 'TheEndOfTheFuckingWorld.jpg', 'James is 17 and is pretty sure he is a psychopath. Alyssa, also 17, is the cool and moody new girl a'),
+                                                                (122, '104 Room', 'https://www.imdb.com/title/tt6064882/', '104Room.jpg', 'Anthology series set in room 104 of a seemingly average American motel, each time telling a differen'),
+                                                                (123, 'Clickbait', 'https://www.imdb.com/title/tt10888878/?ref_=nv_sr_srsg_0', 'ClickBait.jpg', 'When family man Nick Brewer is abducted in a crime with a sinister online twist, those closest to hi'),
+                                                                (124, 'Cobra Kai', 'https://www.imdb.com/title/tt7221388/?ref_=fn_al_tt_1', 'CobraKai.jpg', 'Decades after their 1984 All Valley Karate Tournament bout, a middle-aged Daniel LaRusso and Johnny '),
+                                                                (125, 'Criminal Minds', 'https://www.imdb.com/title/tt0452046/?ref_=nv_sr_srsg_0', 'CriminalMinds.jpg', 'A group of criminal profilers who work for the FBI as members of its Behavioral Analysis Unit (BAU) '),
+                                                                (126, 'CSI Miami', 'https://www.imdb.com/title/tt0313043/?ref_=nv_sr_srsg_0', 'CSIMiami.jpg', 'Follows the cases of the Miami-Dade Police Department''s Crime Scene Investigation unit as they try t'),
+                                                                (127, 'Echo 3', 'https://www.imdb.com/title/tt12762512/?ref_=nv_sr_srsg_0', 'Echo3.jpg', 'When Amber Chesborough goes missing along the Colombia-Venezuela border, her brother and her husband'),
+                                                                (128, 'Emily In Paris', 'https://www.imdb.com/title/tt8962124/?ref_=nv_sr_srsg_0', 'EmilyInParis.jpg', 'A young American woman from the Midwest is hired by a marketing firm in Paris to provide them with a'),
+                                                                (129, 'Family Guy', 'https://www.imdb.com/title/tt0182576/?ref_=nv_sr_srsg_3', 'FamilyGuy.jpg', 'In a wacky Rhode Island town, a dysfunctional family strives to cope with everyday life as they are '),
+                                                                (130, 'Grey''s Anatomy', 'https://www.imdb.com/title/tt0413573/?ref_=nv_sr_srsg_0', 'GreysAnathomy.jpg', 'A drama centered on the personal and professional lives of five surgical interns and their superviso'),
+                                                                (131, 'Money Heist', 'https://www.imdb.com/title/tt6468322/?ref_=fn_al_tt_1', 'MoneyHeist.jpg', 'An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - steal'),
+                                                                (132, 'Lucifer', 'https://www.imdb.com/title/tt4052886/?ref_=nv_sr_srsg_0', 'Lucifer.jpg', 'Lucifer Morningstar has decided he''s had enough of being the dutiful servant in Hell and decides to '),
+                                                                (133, 'Narcos', 'https://www.imdb.com/title/tt2707408/?ref_=fn_al_tt_1', 'Narcos.jpg', 'A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar, as well as the many'),
+                                                                (134, 'Ozark', 'https://www.imdb.com/title/tt5071412/?ref_=nv_sr_srsg_0', 'Ozarl.jpg', 'A financial advisor drags his family from Chicago to the Missouri Ozarks, where he must launder mone'),
+                                                                (135, 'Peaky Blinders', 'https://www.imdb.com/title/tt2442560/?ref_=nv_sr_srsg_1', 'PeakyBlinder.jpg', 'A gangster family epic set in 1900s England, centering on a gang who sew razor blades in the peaks o'),
+                                                                (136, 'Sex Education', 'https://www.imdb.com/title/tt7767422/?ref_=nv_sr_srsg_0', 'sexeducation.jpg', 'A teenage boy with a sex therapist mother teams up with a high school classmate to set up an undergr'),
+                                                                (137, 'Sisi', 'https://www.imdb.com/title/tt11269100/plotsummary/?ref_=tt_ov_pl', 'Sisi.jpg', '"Sisi" follows the extraordinary life of empress Elisabeth of Austria. Modern, honest, and authentic'),
+                                                                (138, 'Stranger Things', 'https://www.imdb.com/title/tt4574334/?ref_=nv_sr_srsg_0', 'StrangerThings.jpg', 'When a young boy disappears, his mother, a police chief and his friends must confront terrifying sup'),
+                                                                (139, 'Supoernatural', 'https://www.imdb.com/title/tt0460681/?ref_=nv_sr_srsg_2', 'SuperNatural.jpg', 'Two brothers follow their father''s footsteps as hunters, fighting evil supernatural beings of many k'),
+                                                                (140, 'The Big Bang Theory', 'https://www.imdb.com/title/tt0898266/?ref_=nv_sr_srsg_0', 'TheBigBangTheory.jpg', 'A woman who moves into an apartment across the hall from two brilliant but socially awkward physicis'),
+                                                                (141, 'The End Of The Fucking World', 'https://www.imdb.com/title/tt6257970/?ref_=nv_sr_srsg_1', 'TheEndOfTheFuckingWorld.jpg', 'James is 17 and is pretty sure he is a psychopath. Alyssa, also 17, is the cool and moody new girl a'),
+                                                                (142, '104 Room', 'https://www.imdb.com/title/tt6064882/', '104Room.jpg', 'Anthology series set in room 104 of a seemingly average American motel, each time telling a differen'),
+                                                                (143, 'Clickbait', 'https://www.imdb.com/title/tt10888878/?ref_=nv_sr_srsg_0', 'ClickBait.jpg', 'When family man Nick Brewer is abducted in a crime with a sinister online twist, those closest to hi'),
+                                                                (144, 'Cobra Kai', 'https://www.imdb.com/title/tt7221388/?ref_=fn_al_tt_1', 'CobraKai.jpg', 'Decades after their 1984 All Valley Karate Tournament bout, a middle-aged Daniel LaRusso and Johnny '),
+                                                                (145, 'Criminal Minds', 'https://www.imdb.com/title/tt0452046/?ref_=nv_sr_srsg_0', 'CriminalMinds.jpg', 'A group of criminal profilers who work for the FBI as members of its Behavioral Analysis Unit (BAU) '),
+                                                                (146, 'CSI Miami', 'https://www.imdb.com/title/tt0313043/?ref_=nv_sr_srsg_0', 'CSIMiami.jpg', 'Follows the cases of the Miami-Dade Police Department''s Crime Scene Investigation unit as they try t'),
+                                                                (147, 'Echo 3', 'https://www.imdb.com/title/tt12762512/?ref_=nv_sr_srsg_0', 'Echo3.jpg', 'When Amber Chesborough goes missing along the Colombia-Venezuela border, her brother and her husband'),
+                                                                (148, 'Emily In Paris', 'https://www.imdb.com/title/tt8962124/?ref_=nv_sr_srsg_0', 'EmilyInParis.jpg', 'A young American woman from the Midwest is hired by a marketing firm in Paris to provide them with a'),
+                                                                (149, 'Family Guy', 'https://www.imdb.com/title/tt0182576/?ref_=nv_sr_srsg_3', 'FamilyGuy.jpg', 'In a wacky Rhode Island town, a dysfunctional family strives to cope with everyday life as they are '),
+                                                                (150, 'Grey''s Anatomy', 'https://www.imdb.com/title/tt0413573/?ref_=nv_sr_srsg_0', 'GreysAnathomy.jpg', 'A drama centered on the personal and professional lives of five surgical interns and their superviso'),
+                                                                (151, 'Money Heist', 'https://www.imdb.com/title/tt6468322/?ref_=fn_al_tt_1', 'MoneyHeist.jpg', 'An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - steal'),
+                                                                (152, 'Lucifer', 'https://www.imdb.com/title/tt4052886/?ref_=nv_sr_srsg_0', 'Lucifer.jpg', 'Lucifer Morningstar has decided he''s had enough of being the dutiful servant in Hell and decides to '),
+                                                                (153, 'Narcos', 'https://www.imdb.com/title/tt2707408/?ref_=fn_al_tt_1', 'Narcos.jpg', 'A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar, as well as the many'),
+                                                                (154, 'Ozark', 'https://www.imdb.com/title/tt5071412/?ref_=nv_sr_srsg_0', 'Ozarl.jpg', 'A financial advisor drags his family from Chicago to the Missouri Ozarks, where he must launder mone'),
+                                                                (155, 'Peaky Blinders', 'https://www.imdb.com/title/tt2442560/?ref_=nv_sr_srsg_1', 'PeakyBlinder.jpg', 'A gangster family epic set in 1900s England, centering on a gang who sew razor blades in the peaks o'),
+                                                                (156, 'Sex Education', 'https://www.imdb.com/title/tt7767422/?ref_=nv_sr_srsg_0', 'sexeducation.jpg', 'A teenage boy with a sex therapist mother teams up with a high school classmate to set up an undergr'),
+                                                                (157, 'Sisi', 'https://www.imdb.com/title/tt11269100/plotsummary/?ref_=tt_ov_pl', 'Sisi.jpg', '"Sisi" follows the extraordinary life of empress Elisabeth of Austria. Modern, honest, and authentic'),
+                                                                (158, 'Stranger Things', 'https://www.imdb.com/title/tt4574334/?ref_=nv_sr_srsg_0', 'StrangerThings.jpg', 'When a young boy disappears, his mother, a police chief and his friends must confront terrifying sup'),
+                                                                (159, 'Supoernatural', 'https://www.imdb.com/title/tt0460681/?ref_=nv_sr_srsg_2', 'SuperNatural.jpg', 'Two brothers follow their father''s footsteps as hunters, fighting evil supernatural beings of many k'),
+                                                                (160, 'The Big Bang Theory', 'https://www.imdb.com/title/tt0898266/?ref_=nv_sr_srsg_0', 'TheBigBangTheory.jpg', 'A woman who moves into an apartment across the hall from two brilliant but socially awkward physicis'),
+                                                                (161, 'The End Of The Fucking World', 'https://www.imdb.com/title/tt6257970/?ref_=nv_sr_srsg_1', 'TheEndOfTheFuckingWorld.jpg', 'James is 17 and is pretty sure he is a psychopath. Alyssa, also 17, is the cool and moody new girl a'),
+                                                                (162, '104 Room', 'https://www.imdb.com/title/tt6064882/', '104Room.jpg', 'Anthology series set in room 104 of a seemingly average American motel, each time telling a differen'),
+                                                                (163, 'Clickbait', 'https://www.imdb.com/title/tt10888878/?ref_=nv_sr_srsg_0', 'ClickBait.jpg', 'When family man Nick Brewer is abducted in a crime with a sinister online twist, those closest to hi'),
+                                                                (164, 'Cobra Kai', 'https://www.imdb.com/title/tt7221388/?ref_=fn_al_tt_1', 'CobraKai.jpg', 'Decades after their 1984 All Valley Karate Tournament bout, a middle-aged Daniel LaRusso and Johnny '),
+                                                                (165, 'Criminal Minds', 'https://www.imdb.com/title/tt0452046/?ref_=nv_sr_srsg_0', 'CriminalMinds.jpg', 'A group of criminal profilers who work for the FBI as members of its Behavioral Analysis Unit (BAU) '),
+                                                                (166, 'CSI Miami', 'https://www.imdb.com/title/tt0313043/?ref_=nv_sr_srsg_0', 'CSIMiami.jpg', 'Follows the cases of the Miami-Dade Police Department''s Crime Scene Investigation unit as they try t'),
+                                                                (167, 'Echo 3', 'https://www.imdb.com/title/tt12762512/?ref_=nv_sr_srsg_0', 'Echo3.jpg', 'When Amber Chesborough goes missing along the Colombia-Venezuela border, her brother and her husband'),
+                                                                (168, 'Emily In Paris', 'https://www.imdb.com/title/tt8962124/?ref_=nv_sr_srsg_0', 'EmilyInParis.jpg', 'A young American woman from the Midwest is hired by a marketing firm in Paris to provide them with a'),
+                                                                (169, 'Family Guy', 'https://www.imdb.com/title/tt0182576/?ref_=nv_sr_srsg_3', 'FamilyGuy.jpg', 'In a wacky Rhode Island town, a dysfunctional family strives to cope with everyday life as they are '),
+                                                                (170, 'Grey''s Anatomy', 'https://www.imdb.com/title/tt0413573/?ref_=nv_sr_srsg_0', 'GreysAnathomy.jpg', 'A drama centered on the personal and professional lives of five surgical interns and their superviso'),
+                                                                (171, 'Money Heist', 'https://www.imdb.com/title/tt6468322/?ref_=fn_al_tt_1', 'MoneyHeist.jpg', 'An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - steal'),
+                                                                (172, 'Lucifer', 'https://www.imdb.com/title/tt4052886/?ref_=nv_sr_srsg_0', 'Lucifer.jpg', 'Lucifer Morningstar has decided he''s had enough of being the dutiful servant in Hell and decides to '),
+                                                                (173, 'Narcos', 'https://www.imdb.com/title/tt2707408/?ref_=fn_al_tt_1', 'Narcos.jpg', 'A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar, as well as the many'),
+                                                                (174, 'Ozark', 'https://www.imdb.com/title/tt5071412/?ref_=nv_sr_srsg_0', 'Ozarl.jpg', 'A financial advisor drags his family from Chicago to the Missouri Ozarks, where he must launder mone'),
+                                                                (175, 'Peaky Blinders', 'https://www.imdb.com/title/tt2442560/?ref_=nv_sr_srsg_1', 'PeakyBlinder.jpg', 'A gangster family epic set in 1900s England, centering on a gang who sew razor blades in the peaks o'),
+                                                                (176, 'Sex Education', 'https://www.imdb.com/title/tt7767422/?ref_=nv_sr_srsg_0', 'sexeducation.jpg', 'A teenage boy with a sex therapist mother teams up with a high school classmate to set up an undergr'),
+                                                                (177, 'Sisi', 'https://www.imdb.com/title/tt11269100/plotsummary/?ref_=tt_ov_pl', 'Sisi.jpg', '"Sisi" follows the extraordinary life of empress Elisabeth of Austria. Modern, honest, and authentic'),
+                                                                (178, 'Stranger Things', 'https://www.imdb.com/title/tt4574334/?ref_=nv_sr_srsg_0', 'StrangerThings.jpg', 'When a young boy disappears, his mother, a police chief and his friends must confront terrifying sup'),
+                                                                (179, 'Supoernatural', 'https://www.imdb.com/title/tt0460681/?ref_=nv_sr_srsg_2', 'SuperNatural.jpg', 'Two brothers follow their father''s footsteps as hunters, fighting evil supernatural beings of many k'),
+                                                                (180, 'The Big Bang Theory', 'https://www.imdb.com/title/tt0898266/?ref_=nv_sr_srsg_0', 'TheBigBangTheory.jpg', 'A woman who moves into an apartment across the hall from two brilliant but socially awkward physicis'),
+                                                                (181, 'The End Of The Fucking World', 'https://www.imdb.com/title/tt6257970/?ref_=nv_sr_srsg_1', 'TheEndOfTheFuckingWorld.jpg', 'James is 17 and is pretty sure he is a psychopath. Alyssa, also 17, is the cool and moody new girl a'),
+                                                                (182, '104 Room', 'https://www.imdb.com/title/tt6064882/', '104Room.jpg', 'Anthology series set in room 104 of a seemingly average American motel, each time telling a differen'),
+                                                                (183, 'Clickbait', 'https://www.imdb.com/title/tt10888878/?ref_=nv_sr_srsg_0', 'ClickBait.jpg', 'When family man Nick Brewer is abducted in a crime with a sinister online twist, those closest to hi'),
+                                                                (184, 'Cobra Kai', 'https://www.imdb.com/title/tt7221388/?ref_=fn_al_tt_1', 'CobraKai.jpg', 'Decades after their 1984 All Valley Karate Tournament bout, a middle-aged Daniel LaRusso and Johnny '),
+                                                                (185, 'Criminal Minds', 'https://www.imdb.com/title/tt0452046/?ref_=nv_sr_srsg_0', 'CriminalMinds.jpg', 'A group of criminal profilers who work for the FBI as members of its Behavioral Analysis Unit (BAU) '),
+                                                                (186, 'CSI Miami', 'https://www.imdb.com/title/tt0313043/?ref_=nv_sr_srsg_0', 'CSIMiami.jpg', 'Follows the cases of the Miami-Dade Police Department''s Crime Scene Investigation unit as they try t'),
+                                                                (187, 'Echo 3', 'https://www.imdb.com/title/tt12762512/?ref_=nv_sr_srsg_0', 'Echo3.jpg', 'When Amber Chesborough goes missing along the Colombia-Venezuela border, her brother and her husband'),
+                                                                (188, 'Emily In Paris', 'https://www.imdb.com/title/tt8962124/?ref_=nv_sr_srsg_0', 'EmilyInParis.jpg', 'A young American woman from the Midwest is hired by a marketing firm in Paris to provide them with a'),
+                                                                (189, 'Family Guy', 'https://www.imdb.com/title/tt0182576/?ref_=nv_sr_srsg_3', 'FamilyGuy.jpg', 'In a wacky Rhode Island town, a dysfunctional family strives to cope with everyday life as they are '),
+                                                                (190, 'Grey''s Anatomy', 'https://www.imdb.com/title/tt0413573/?ref_=nv_sr_srsg_0', 'GreysAnathomy.jpg', 'A drama centered on the personal and professional lives of five surgical interns and their superviso'),
+                                                                (191, 'Money Heist', 'https://www.imdb.com/title/tt6468322/?ref_=fn_al_tt_1', 'MoneyHeist.jpg', 'An unusual group of robbers attempt to carry out the most perfect robbery in Spanish history - steal'),
+                                                                (192, 'Lucifer', 'https://www.imdb.com/title/tt4052886/?ref_=nv_sr_srsg_0', 'Lucifer.jpg', 'Lucifer Morningstar has decided he''s had enough of being the dutiful servant in Hell and decides to '),
+                                                                (193, 'Narcos', 'https://www.imdb.com/title/tt2707408/?ref_=fn_al_tt_1', 'Narcos.jpg', 'A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar, as well as the many'),
+                                                                (194, 'Ozark', 'https://www.imdb.com/title/tt5071412/?ref_=nv_sr_srsg_0', 'Ozarl.jpg', 'A financial advisor drags his family from Chicago to the Missouri Ozarks, where he must launder mone'),
+                                                                (195, 'Peaky Blinders', 'https://www.imdb.com/title/tt2442560/?ref_=nv_sr_srsg_1', 'PeakyBlinder.jpg', 'A gangster family epic set in 1900s England, centering on a gang who sew razor blades in the peaks o'),
+                                                                (196, 'Sex Education', 'https://www.imdb.com/title/tt7767422/?ref_=nv_sr_srsg_0', 'sexeducation.jpg', 'A teenage boy with a sex therapist mother teams up with a high school classmate to set up an undergr'),
+                                                                (197, 'Sisi', 'https://www.imdb.com/title/tt11269100/plotsummary/?ref_=tt_ov_pl', 'Sisi.jpg', '"Sisi" follows the extraordinary life of empress Elisabeth of Austria. Modern, honest, and authentic'),
+                                                                (198, 'Stranger Things', 'https://www.imdb.com/title/tt4574334/?ref_=nv_sr_srsg_0', 'StrangerThings.jpg', 'When a young boy disappears, his mother, a police chief and his friends must confront terrifying sup'),
+                                                                (199, 'Supoernatural', 'https://www.imdb.com/title/tt0460681/?ref_=nv_sr_srsg_2', 'SuperNatural.jpg', 'Two brothers follow their father''s footsteps as hunters, fighting evil supernatural beings of many k'),
+                                                                (200, 'The Big Bang Theory', 'https://www.imdb.com/title/tt0898266/?ref_=nv_sr_srsg_0', 'TheBigBangTheory.jpg', 'A woman who moves into an apartment across the hall from two brilliant but socially awkward physicis'),
+                                                                (201, 'The End Of The Fucking World', 'https://www.imdb.com/title/tt6257970/?ref_=nv_sr_srsg_1', 'TheEndOfTheFuckingWorld.jpg', 'James is 17 and is pretty sure he is a psychopath. Alyssa, also 17, is the cool and moody new girl a'),
+                                                                (202, 'The Mentalist', 'https://www.imdb.com/title/tt1196946/?ref_=nv_sr_srsg_0', 'TheMentalist.jpg', 'A famous "psychic" outs himself as a fake, and starts working as a consultant for the California Bur'),
+                                                                (203, 'The Vampire Diaries', 'https://www.imdb.com/title/tt1405406/?ref_=fn_al_tt_1', 'TheVampireDiaries.jpg', 'The lives, loves, dangers and disasters in the town, Mystic Falls, Virginia. Creatures of unspeakabl'),
+                                                                (204, 'The Witcher', 'https://www.imdb.com/title/tt5180504/?ref_=nv_sr_srsg_0', 'TheWitcher.jpg', 'Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people ofte'),
+                                                                (205, 'Two and a Half Men', 'https://www.imdb.com/title/tt0369179/?ref_=fn_al_tt_1', 'TwoAndAHalfMen.jpg', 'A hedonistic jingle writer''s free-wheeling life comes to an abrupt halt when his brother and 10-year'),
+                                                                (206, 'Unfriended', 'https://www.imdb.com/title/tt3713166/?ref_=nv_sr_srsg_0', 'Unfriended.jpg', 'A group of online chatroom friends find themselves haunted by a mysterious, supernatural force using'),
+                                                                (207, 'Wednesday', 'https://www.imdb.com/title/tt13443470/?ref_=fn_al_tt_1', 'Wednesday.jpg', 'Follows Wednesday Addams'' years as a student, when she attempts to master her emerging psychic abili'),
+                                                                (208, 'The Walking Dead', 'https://www.imdb.com/title/tt1520211/?ref_=nv_sr_srsg_0', 'WalkingDead.jpg', 'Sheriff Deputy Rick Grimes wakes up from a coma to learn the world is in ruins and must lead a group'),
+                                                                (209, 'You', 'https://www.imdb.com/title/tt7335184/?ref_=fn_al_tt_1', 'You.jpg', 'A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself int'),
+                                                                (210, 'The Mentalist', 'https://www.imdb.com/title/tt1196946/?ref_=nv_sr_srsg_0', 'TheMentalist.jpg', 'A famous "psychic" outs himself as a fake, and starts working as a consultant for the California Bur'),
+                                                                (211, 'The Vampire Diaries', 'https://www.imdb.com/title/tt1405406/?ref_=fn_al_tt_1', 'TheVampireDiaries.jpg', 'The lives, loves, dangers and disasters in the town, Mystic Falls, Virginia. Creatures of unspeakabl'),
+                                                                (212, 'The Witcher', 'https://www.imdb.com/title/tt5180504/?ref_=nv_sr_srsg_0', 'TheWitcher.jpg', 'Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people ofte'),
+                                                                (213, 'Two and a Half Men', 'https://www.imdb.com/title/tt0369179/?ref_=fn_al_tt_1', 'TwoAndAHalfMen.jpg', 'A hedonistic jingle writer''s free-wheeling life comes to an abrupt halt when his brother and 10-year'),
+                                                                (214, 'Unfriended', 'https://www.imdb.com/title/tt3713166/?ref_=nv_sr_srsg_0', 'Unfriended.jpg', 'A group of online chatroom friends find themselves haunted by a mysterious, supernatural force using'),
+                                                                (215, 'Wednesday', 'https://www.imdb.com/title/tt13443470/?ref_=fn_al_tt_1', 'Wednesday.jpg', 'Follows Wednesday Addams'' years as a student, when she attempts to master her emerging psychic abili'),
+                                                                (216, 'The Walking Dead', 'https://www.imdb.com/title/tt1520211/?ref_=nv_sr_srsg_0', 'WalkingDead.jpg', 'Sheriff Deputy Rick Grimes wakes up from a coma to learn the world is in ruins and must lead a group'),
+                                                                (217, 'You', 'https://www.imdb.com/title/tt7335184/?ref_=fn_al_tt_1', 'You.jpg', 'A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself int'),
+                                                                (218, 'The Mentalist', 'https://www.imdb.com/title/tt1196946/?ref_=nv_sr_srsg_0', 'TheMentalist.jpg', 'A famous "psychic" outs himself as a fake, and starts working as a consultant for the California Bur'),
+                                                                (219, 'The Vampire Diaries', 'https://www.imdb.com/title/tt1405406/?ref_=fn_al_tt_1', 'TheVampireDiaries.jpg', 'The lives, loves, dangers and disasters in the town, Mystic Falls, Virginia. Creatures of unspeakabl'),
+                                                                (220, 'The Witcher', 'https://www.imdb.com/title/tt5180504/?ref_=nv_sr_srsg_0', 'TheWitcher.jpg', 'Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people ofte'),
+                                                                (221, 'Two and a Half Men', 'https://www.imdb.com/title/tt0369179/?ref_=fn_al_tt_1', 'TwoAndAHalfMen.jpg', 'A hedonistic jingle writer''s free-wheeling life comes to an abrupt halt when his brother and 10-year'),
+                                                                (222, 'Unfriended', 'https://www.imdb.com/title/tt3713166/?ref_=nv_sr_srsg_0', 'Unfriended.jpg', 'A group of online chatroom friends find themselves haunted by a mysterious, supernatural force using'),
+                                                                (223, 'Wednesday', 'https://www.imdb.com/title/tt13443470/?ref_=fn_al_tt_1', 'Wednesday.jpg', 'Follows Wednesday Addams'' years as a student, when she attempts to master her emerging psychic abili'),
+                                                                (224, 'The Walking Dead', 'https://www.imdb.com/title/tt1520211/?ref_=nv_sr_srsg_0', 'WalkingDead.jpg', 'Sheriff Deputy Rick Grimes wakes up from a coma to learn the world is in ruins and must lead a group'),
+                                                                (225, 'You', 'https://www.imdb.com/title/tt7335184/?ref_=fn_al_tt_1', 'You.jpg', 'A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself int'),
+                                                                (226, 'The Mentalist', 'https://www.imdb.com/title/tt1196946/?ref_=nv_sr_srsg_0', 'TheMentalist.jpg', 'A famous "psychic" outs himself as a fake, and starts working as a consultant for the California Bur'),
+                                                                (227, 'The Vampire Diaries', 'https://www.imdb.com/title/tt1405406/?ref_=fn_al_tt_1', 'TheVampireDiaries.jpg', 'The lives, loves, dangers and disasters in the town, Mystic Falls, Virginia. Creatures of unspeakabl'),
+                                                                (228, 'The Witcher', 'https://www.imdb.com/title/tt5180504/?ref_=nv_sr_srsg_0', 'TheWitcher.jpg', 'Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people ofte'),
+                                                                (229, 'Two and a Half Men', 'https://www.imdb.com/title/tt0369179/?ref_=fn_al_tt_1', 'TwoAndAHalfMen.jpg', 'A hedonistic jingle writer''s free-wheeling life comes to an abrupt halt when his brother and 10-year'),
+                                                                (230, 'Unfriended', 'https://www.imdb.com/title/tt3713166/?ref_=nv_sr_srsg_0', 'Unfriended.jpg', 'A group of online chatroom friends find themselves haunted by a mysterious, supernatural force using'),
+                                                                (231, 'Wednesday', 'https://www.imdb.com/title/tt13443470/?ref_=fn_al_tt_1', 'Wednesday.jpg', 'Follows Wednesday Addams'' years as a student, when she attempts to master her emerging psychic abili'),
+                                                                (232, 'The Walking Dead', 'https://www.imdb.com/title/tt1520211/?ref_=nv_sr_srsg_0', 'WalkingDead.jpg', 'Sheriff Deputy Rick Grimes wakes up from a coma to learn the world is in ruins and must lead a group'),
+                                                                (233, 'You', 'https://www.imdb.com/title/tt7335184/?ref_=fn_al_tt_1', 'You.jpg', 'A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself int'),
+                                                                (234, 'The Mentalist', 'https://www.imdb.com/title/tt1196946/?ref_=nv_sr_srsg_0', 'TheMentalist.jpg', 'A famous "psychic" outs himself as a fake, and starts working as a consultant for the California Bur'),
+                                                                (235, 'The Vampire Diaries', 'https://www.imdb.com/title/tt1405406/?ref_=fn_al_tt_1', 'TheVampireDiaries.jpg', 'The lives, loves, dangers and disasters in the town, Mystic Falls, Virginia. Creatures of unspeakabl'),
+                                                                (236, 'The Witcher', 'https://www.imdb.com/title/tt5180504/?ref_=nv_sr_srsg_0', 'TheWitcher.jpg', 'Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people ofte'),
+                                                                (237, 'Two and a Half Men', 'https://www.imdb.com/title/tt0369179/?ref_=fn_al_tt_1', 'TwoAndAHalfMen.jpg', 'A hedonistic jingle writer''s free-wheeling life comes to an abrupt halt when his brother and 10-year'),
+                                                                (238, 'Unfriended', 'https://www.imdb.com/title/tt3713166/?ref_=nv_sr_srsg_0', 'Unfriended.jpg', 'A group of online chatroom friends find themselves haunted by a mysterious, supernatural force using'),
+                                                                (239, 'Wednesday', 'https://www.imdb.com/title/tt13443470/?ref_=fn_al_tt_1', 'Wednesday.jpg', 'Follows Wednesday Addams'' years as a student, when she attempts to master her emerging psychic abili'),
+                                                                (240, 'The Walking Dead', 'https://www.imdb.com/title/tt1520211/?ref_=nv_sr_srsg_0', 'WalkingDead.jpg', 'Sheriff Deputy Rick Grimes wakes up from a coma to learn the world is in ruins and must lead a group'),
+                                                                (241, 'You', 'https://www.imdb.com/title/tt7335184/?ref_=fn_al_tt_1', 'You.jpg', 'A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself int'),
+                                                                (242, 'The Mentalist', 'https://www.imdb.com/title/tt1196946/?ref_=nv_sr_srsg_0', 'TheMentalist.jpg', 'A famous "psychic" outs himself as a fake, and starts working as a consultant for the California Bur'),
+                                                                (243, 'The Vampire Diaries', 'https://www.imdb.com/title/tt1405406/?ref_=fn_al_tt_1', 'TheVampireDiaries.jpg', 'The lives, loves, dangers and disasters in the town, Mystic Falls, Virginia. Creatures of unspeakabl'),
+                                                                (244, 'The Witcher', 'https://www.imdb.com/title/tt5180504/?ref_=nv_sr_srsg_0', 'TheWitcher.jpg', 'Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people ofte'),
+                                                                (245, 'Two and a Half Men', 'https://www.imdb.com/title/tt0369179/?ref_=fn_al_tt_1', 'TwoAndAHalfMen.jpg', 'A hedonistic jingle writer''s free-wheeling life comes to an abrupt halt when his brother and 10-year'),
+                                                                (246, 'Unfriended', 'https://www.imdb.com/title/tt3713166/?ref_=nv_sr_srsg_0', 'Unfriended.jpg', 'A group of online chatroom friends find themselves haunted by a mysterious, supernatural force using'),
+                                                                (247, 'Wednesday', 'https://www.imdb.com/title/tt13443470/?ref_=fn_al_tt_1', 'Wednesday.jpg', 'Follows Wednesday Addams'' years as a student, when she attempts to master her emerging psychic abili'),
+                                                                (248, 'The Walking Dead', 'https://www.imdb.com/title/tt1520211/?ref_=nv_sr_srsg_0', 'WalkingDead.jpg', 'Sheriff Deputy Rick Grimes wakes up from a coma to learn the world is in ruins and must lead a group');
+INSERT INTO `sorozat` (`id`, `nev`, `imd`, `kep`, `leiras`) VALUES
+    (249, 'You', 'https://www.imdb.com/title/tt7335184/?ref_=fn_al_tt_1', 'You.jpg', 'A dangerously charming, intensely obsessive young man goes to extreme measures to insert himself int');
 
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `user`
+-- Table structure for table `user`
 --
 
-CREATE TABLE `user` (
-  `id` int(50) NOT NULL,
-  `nev` varchar(50) NOT NULL,
-  `jelszo` varchar(255) NOT NULL,
-  `email` varchar(100) NOT NULL,
-  `kep` varchar(255) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+CREATE TABLE IF NOT EXISTS `user` (
+    `id` int(50) NOT NULL AUTO_INCREMENT,
+    `nev` varchar(50) NOT NULL,
+    `jelszo` varchar(50) NOT NULL,
+    `email` varchar(100) NOT NULL,
+    PRIMARY KEY (`id`)
+    ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
--- A tábla adatainak kiíratása `user`
+-- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `nev`, `jelszo`, `email`, `kep`) VALUES
-(1, 'Kaposztas Zsuzsanna', '$2y$10$jWWzef5CdTerGGvn3xTzOeP4SDG04ewtXRMqosFqE7M8O9Ey8xznG', 'zsuzsa22@gmail.com', 'ClickBait.jpg');
-
---
--- Indexek a kiírt táblákhoz
---
-
---
--- A tábla indexei `link`
---
-ALTER TABLE `link`
-  ADD PRIMARY KEY (`id`);
-
---
--- A tábla indexei `sorozat`
---
-ALTER TABLE `sorozat`
-  ADD PRIMARY KEY (`id`);
-
---
--- A tábla indexei `user`
---
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`id`);
-
---
--- A kiírt táblák AUTO_INCREMENT értéke
---
-
---
--- AUTO_INCREMENT a táblához `sorozat`
---
-ALTER TABLE `sorozat`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT a táblához `user`
---
-ALTER TABLE `user`
-  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+INSERT INTO `user` (`id`, `nev`, `jelszo`, `email`) VALUES
+    (1, 'Kaposztas Zsuzsi', 'okesako', 'zsuzsa22@gmail.com');
