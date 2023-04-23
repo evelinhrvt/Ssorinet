@@ -36,7 +36,7 @@ include 'header.php'; ?>
                     data +=
                         '<li>' +
                         '   <a href="' + res[i]['linek'] + '" target="_blank">' +
-                        '<span>' + res[i]['hostnev'] + '</span>' +
+                        '<span title="' + res[i]['linek'] + '">' + res[i]['hostnev'] + '</span>' +
                         '</a>' +
                         '</li>'
                 }

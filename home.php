@@ -67,7 +67,7 @@ include 'header.php'; ?>
                 for (let i = 0; i < res.length; i++) {
                     console.log((res[i]));
                     data +=
-                        '<div class="box">' +
+                        '<div class="box" title="' + res[i]['nev'] + '">' +
                         '<a href="sorozatFooldal.php?seriesID=' + res[i]['id'] + '">' +
                         '<img class="kep" src="Kepek/' + res[i]['kep'] + '"></a>' +
                         '</div> ';

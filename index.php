@@ -23,7 +23,7 @@
             <label>Password</label>
         </div>
 
-        <input type="submit" id="loginBTN" value="Login">
+        <input class="submitBTN" id="loginBTN" value="Login">
 
         <div class="signup_link">
             A member? <a href="registration.php">Signup</a>
