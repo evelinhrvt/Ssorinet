@@ -2,21 +2,21 @@
 -- version 3.2.0.1
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: Apr 23, 2023 at 09:40 PM
--- Server version: 5.1.36
--- PHP Version: 5.3.0
+-- Hoszt: localhost
+-- Létrehozás ideje: 2023. ápr. 24. 09:23
+-- Szerver verzió: 5.1.36
+-- PHP verzió: 5.3.0
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 
 --
--- Database: `sorinet`
+-- Adatbázis: `sorinet`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `link`
+-- Tábla szerkezet: `link`
 --
 
 CREATE TABLE IF NOT EXISTS `link` (
@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS `link` (
     ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `link`
+-- A tábla adatainak kiíratása `link`
 --
 
 INSERT INTO `link` (`id`, `linek`, `resz`, `sorozatid`, `hostnev`) VALUES
@@ -38,7 +38,7 @@ INSERT INTO `link` (`id`, `linek`, `resz`, `sorozatid`, `hostnev`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sorozat`
+-- Tábla szerkezet: `sorozat`
 --
 
 CREATE TABLE IF NOT EXISTS `sorozat` (
@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS `sorozat` (
     ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=250 ;
 
 --
--- Dumping data for table `sorozat`
+-- A tábla adatainak kiíratása `sorozat`
 --
 
 INSERT INTO `sorozat` (`id`, `nev`, `imd`, `kep`, `leiras`) VALUES
@@ -309,20 +309,21 @@ INSERT INTO `sorozat` (`id`, `nev`, `imd`, `kep`, `leiras`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Tábla szerkezet: `user`
 --
 
 CREATE TABLE IF NOT EXISTS `user` (
     `id` int(50) NOT NULL AUTO_INCREMENT,
     `nev` varchar(50) NOT NULL,
-    `jelszo` varchar(50) NOT NULL,
+    `jelszo` varchar(255) NOT NULL,
     `email` varchar(100) NOT NULL,
+    `kep` varchar(255) NOT NULL,
     PRIMARY KEY (`id`)
     ) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
 --
--- Dumping data for table `user`
+-- A tábla adatainak kiíratása `user`
 --
 
-INSERT INTO `user` (`id`, `nev`, `jelszo`, `email`) VALUES
-    (1, 'Kaposztas Zsuzsi', 'okesako', 'zsuzsa22@gmail.com');
+INSERT INTO `user` (`id`, `nev`, `jelszo`, `email`, `kep`) VALUES
+    (1, 'Kaposztas Zsuzsi', 'okesako', 'zsuzsa22@gmail.com', '');

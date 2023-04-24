@@ -30,7 +30,7 @@ if (!empty($_POST['submit']) && $_POST['submit'] == 'Registration') {
                     }
                 }
                 // Sozzuk a jelszavat mert adatbáziba nem mentjük direkt a jelszavat hanem kódolva, biztonsági szempont miatt
-                $password = password_hash($password, PASSWORD_DEFAULT);
+                //$password = password_hash($password, PASSWORD_DEFAULT);
                 $sql = "INSERT INTO user (nev, email, jelszo, kep) VALUES ('$name', '$email', '$password', '$imageName')";
                 if ($db->query($sql) === true) {
                     ?><script>alert('A regisztrácio sikeres volt. Jelentkezz be!')</script><?php

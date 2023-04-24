@@ -60,7 +60,7 @@ function Login()
     $count = mysqli_num_rows($result);
     $row = mysqli_fetch_array($result);
 
-    if ($count >= 1 && password_verify($password, $row['jelszo'])) {
+    if ($count >= 1 && ($password == $row['jelszo'])) {
         session_start();
         $_SESSION["loggedUserID"] = $row['id'];
         return 'success';
